@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+  FINANCE — multimidia.html
+  Vídeo, áudio e galeria (HTML, CSS e JavaScript puros, sem Bootstrap).
+  Projeto acadêmico — Desenvolvimento Front-End para Web — Universidade Positivo
+  Autores: Victor Gabriel Santos Pinheiro e Tales Siqueira Peixoto
+-->
+<html lang="pt-BR" data-theme="light" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Vídeo, áudios e galeria de dicas sobre educação financeira.">
+    <title>Multimídia — FINANCE</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230b0b0c'/%3E%3Cpolyline points='8,21 13,16 17,19 24,11' fill='none' stroke='%231fd1a5' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='24' cy='11' r='2.4' fill='%231fd1a5'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/puro.css">
+    <script src="js/tema.js"></script>
+  </head>
+  <body id="pagina-multimidia">
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <nav class="nav-puro" aria-label="Menu principal">
+        <div class="container-f nav-puro-barra">
+          <a class="marca" href="index.html"><svg class="marca-simbolo" viewBox="0 0 32 32" aria-hidden="true"><rect class="fundo" width="32" height="32" rx="9"/><polyline class="linha" points="8,21 13,16 17,19 24,11"/><circle class="ponto" cx="24" cy="11" r="2.4"/></svg>FINANCE</a>
+          <ul class="nav-puro-lista" id="menuPuro">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="aprenda.html">Aprenda</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li>
+              <details class="menu-suspenso">
+                <summary>Ferramentas</summary>
+                <ul>
+                  <li><a href="simuladores.html"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 18h4"/></svg><span>Planejamento<small>Simuladores financeiros</small></span></a></li>
+                  <li><a href="movimentacoes.html"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H18v3"/><path d="M3 7.5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2H5.5A2.5 2.5 0 0 1 3 7.5z"/><path d="M16.5 14h.01"/></svg><span>Movimentações<small>Receitas e despesas</small></span></a></li>
+                  <li><a href="metas.html"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg><span>Metas<small>Objetivos financeiros</small></span></a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="multimidia.html" class="ativo" aria-current="page">Multimídia</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li>
+              <details class="menu-suspenso menu-suspenso-direita">
+                <summary>Links úteis</summary>
+                <ul>
+                  <li><a href="https://www.bcb.gov.br/cidadaniafinanceira" target="_blank" rel="noopener noreferrer"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span>Banco Central<small>Cidadania Financeira</small></span></a></li>
+                  <li><a href="https://www.consumidor.gov.br" target="_blank" rel="noopener noreferrer"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span>Consumidor.gov.br<small>Reclamações de consumo</small></span></a></li>
+                  <li><a href="https://www.tesourodireto.com.br" target="_blank" rel="noopener noreferrer"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg><span>Tesouro Direto<small>Títulos públicos</small></span></a></li>
+                  <li><a href="https://github.com/victoorpinheiroo/finance" target="_blank" rel="noopener noreferrer"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>GitHub do projeto<small>Código-fonte público</small></span></a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <div class="nav-puro-acoes">
+            <a class="botao-icone" href="favoritos.html" title="Meus favoritos" aria-label="Meus favoritos"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg><span class="contador" id="contadorFavoritos"></span></a>
+            <button class="botao-icone" type="button" id="btnTema" title="Alternar modo claro e escuro" aria-label="Alternar modo claro e escuro"><svg class="icone tema-lua" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="icone tema-sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+            <button class="botao-icone nav-puro-alternar" type="button" id="btnMenu" aria-controls="menuPuro" aria-expanded="false" aria-label="Abrir menu"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="conteudo">
+      <header class="cabecalho-pagina">
+        <div class="container-f">
+          <span class="rotulo">Multimídia</span>
+          <h1>Aprenda também assistindo e ouvindo.</h1>
+          <p class="texto-apoio">Um vídeo curto com legendas sincronizadas, reportagens em áudio sobre educação financeira e uma galeria de dicas para consultar quando quiser.</p>
+        </div>
+      </header>
+
+      <section class="secao" aria-labelledby="tituloVideo">
+        <div class="container-f">
+          <div class="grade-video" id="areaVideo">
+            <div>
+              <div class="palco-video">
+                <video id="videoFinance" controls preload="metadata" poster="video/finance-apresentacao-poster.jpg" playsinline>
+                  <source src="video/finance-apresentacao.mp4" type="video/mp4">
+                  Seu navegador não reproduz vídeos em HTML5.
+                </video>
+                <p id="legendaVideo" aria-live="polite"></p>
+              </div>
+              <div class="controle-linha">
+                <label class="interruptor"><input type="checkbox" id="mostrarLegendas" checked> Mostrar legendas</label>
+                <span>·</span>
+                <span>Vídeo: Pavel Danilyuk e Jakub Zerdzicki / Pexels</span>
+              </div>
+            </div>
+            <div>
+              <span class="rotulo">Vídeo</span>
+              <h2 id="tituloVideo" style="font-size: clamp(1.5rem, 2.6vw, 2rem);">Cinco ideias em 21 segundos</h2>
+              <p class="texto-apoio" style="font-size: 1rem;">Clique em um trecho do roteiro para ir direto a ele. As legendas são exibidas pelo JavaScript de acordo com o tempo do vídeo.</p>
+              <ol class="roteiro" id="roteiroVideo"></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao" style="padding-top: 0;" aria-labelledby="tituloAudio">
+        <div class="container-f">
+          <div class="cabecalho-secao revelar">
+            <span class="rotulo">Áudio</span>
+            <h2 id="tituloAudio">Reportagens para ouvir</h2>
+            <p class="texto-apoio">Seleção de reportagens da Radioagência Nacional (EBC) sobre educação financeira. Escolha um episódio na lista.</p>
+          </div>
+          <div class="player-audio">
+            <article class="episodio-atual">
+              <span class="rotulo" style="color: #a3a8b3;">Tocando agora</span>
+              <h3 id="tituloEpisodio">Carregando episódio…</h3>
+              <p id="infoEpisodio"></p>
+              <div class="ondas" id="ondasAudio" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <audio id="audioFinance" controls preload="metadata">
+                <source id="fonteAudio" src="audio/radioagencia-equilibrio-das-contas.mp3" type="audio/mpeg">
+                Seu navegador não reproduz áudios em HTML5.
+              </audio>
+              <div class="velocidades" id="velocidades" aria-label="Velocidade de reprodução">
+                <button type="button" data-velocidade="1" class="ativo">1x</button>
+                <button type="button" data-velocidade="1.25">1,25x</button>
+                <button type="button" data-velocidade="1.5">1,5x</button>
+                <button type="button" data-velocidade="2">2x</button>
+              </div>
+              <p id="resumoEpisodio" style="margin: 1.25rem 0 0; font-size: 0.92rem;"></p>
+            </article>
+            <ul class="lista-episodios" id="listaEpisodios"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao" style="padding-top: 0;" aria-labelledby="tituloGaleria">
+        <div class="container-f">
+          <div class="cabecalho-secao revelar">
+            <span class="rotulo">Galeria</span>
+            <h2 id="tituloGaleria">Dicas ilustradas</h2>
+            <p class="texto-apoio">Clique em uma imagem para ampliar e ler a dica completa.</p>
+          </div>
+          <div class="galeria" id="galeria">
+            <button type="button" class="galeria-item" data-titulo="Conheça o seu dinheiro" data-texto="Antes de cortar gastos, descubra quanto entra e quanto sai. Registrar tudo por um mês mostra para onde o dinheiro está indo e onde é possível ajustar.">
+              <img src="img/fotos/reais.jpg" alt="Cédulas de real em leque sobre a mesa" loading="lazy">
+              <span>Conheça o seu dinheiro</span>
+            </button>
+            <button type="button" class="galeria-item" data-titulo="Guarde primeiro, gaste depois" data-texto="Separe o valor destinado à reserva ou à meta assim que receber. Quem espera sobrar no fim do mês normalmente não guarda nada.">
+              <img src="img/fotos/poupanca.jpg" alt="Mão colocando moeda em um cofrinho transparente" loading="lazy">
+              <span>Guarde primeiro, gaste depois</span>
+            </button>
+            <button type="button" class="galeria-item" data-titulo="Compre com lista" data-texto="No mercado, leve uma lista e respeite-a. Promoções só são economia quando o produto já estava nos seus planos.">
+              <img src="img/fotos/consumo.jpg" alt="Corredor de supermercado com pessoa empurrando cesta" loading="lazy">
+              <span>Compre com lista</span>
+            </button>
+            <button type="button" class="galeria-item" data-titulo="Desconfie da pressa" data-texto="Golpes dependem de urgência. Bancos não pedem senha, código ou transferência por telefone. Desligue e ligue você para o número oficial.">
+              <img src="img/fotos/seguranca.jpg" alt="Pessoa encapuzada usando celular em ambiente escuro" loading="lazy">
+              <span>Desconfie da pressa</span>
+            </button>
+            <button type="button" class="galeria-item" data-titulo="Metas com valor e prazo" data-texto="Divida o valor da meta pelo número de meses até o prazo. Assim você descobre quanto guardar por mês e acompanha o progresso.">
+              <img src="img/fotos/metas.jpg" alt="Mãos colocando moedas em um pote de economia" loading="lazy">
+              <span>Metas com valor e prazo</span>
+            </button>
+            <button type="button" class="galeria-item" data-titulo="Fatura inteira, sempre" data-texto="Pagar só o mínimo do cartão leva o restante para o crédito rotativo, uma das linhas de crédito mais caras. Se não conseguir pagar tudo, negocie com o banco.">
+              <img src="img/fotos/dividas.jpg" alt="Cartões de crédito no bolso de uma calça jeans" loading="lazy">
+              <span>Fatura inteira, sempre</span>
+            </button>
+          </div>
+          <p class="creditos" style="margin-top: 1.25rem;">Fotos: Pexels. Áudios: Radioagência Nacional / EBC. <a href="sobre.html#creditos">Ver todos os créditos</a></p>
+        </div>
+      </section>
+
+      <section class="secao" style="padding-top: 0;" aria-labelledby="tituloRecomendados">
+        <div class="container-f">
+          <div class="cabecalho-secao revelar">
+            <span class="rotulo">Para assistir depois</span>
+            <h2 id="tituloRecomendados">Vídeos recomendados no YouTube</h2>
+            <p class="texto-apoio">Conteúdos de outros canais que complementam os artigos do FINANCE. É preciso estar conectado à internet para assisti-los.</p>
+          </div>
+          <ul class="lista-videos">
+            <li><a href="https://www.youtube.com/watch?v=GIAH5Tr8a8Q" target="_blank" rel="noopener noreferrer"><span class="lista-videos-icone"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg></span><span><strong>Saiba mais sobre Educação Financeira Pessoal — Ep. 1: Cidadania Financeira</strong><small>Banco Central do Brasil · 5 min</small></span><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li>
+            <li><a href="https://www.youtube.com/watch?v=FdTip4SdWMw" target="_blank" rel="noopener noreferrer"><span class="lista-videos-icone"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg></span><span><strong>Eu vou levar — série "Eu e meu dinheiro"</strong><small>Banco Central do Brasil · 4 min</small></span><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li>
+            <li><a href="https://www.youtube.com/watch?v=srmMQwAGoQU" target="_blank" rel="noopener noreferrer"><span class="lista-videos-icone"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg></span><span><strong>BC te Explica #125 — Como funciona o golpe do Pix errado</strong><small>Banco Central do Brasil · 2 min</small></span><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li>
+            <li><a href="https://www.youtube.com/watch?v=ZMsieXqXwMg" target="_blank" rel="noopener noreferrer"><span class="lista-videos-icone"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg></span><span><strong>Aprenda juros compostos em 8 minutos</strong><small>Dicasdemat Sandro Curió · 9 min</small></span><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></li>
+          </ul>
+        </div>
+      </section>
+
+      <dialog class="janela" id="janelaGaleria" aria-labelledby="tituloJanelaGaleria">
+        <img id="imagemJanela" src="img/fotos/reais.jpg" alt="">
+        <div class="janela-galeria-texto">
+          <h2 id="tituloJanelaGaleria">Dica</h2>
+          <p id="textoJanela"></p>
+          <div class="janela-acoes">
+            <button type="button" class="botao botao-primario" id="btnFecharGaleria">Fechar</button>
+          </div>
+        </div>
+      </dialog>
+    </main>
+    <footer class="site-footer">
+      <div class="container-f">
+        <div class="rodape-grade">
+          <div>
+            <a class="marca" href="index.html"><svg class="marca-simbolo" viewBox="0 0 32 32" aria-hidden="true"><rect class="fundo" width="32" height="32" rx="9"/><polyline class="linha" points="8,21 13,16 17,19 24,11"/><circle class="ponto" cx="24" cy="11" r="2.4"/></svg>FINANCE</a>
+            <p class="rodape-slogan">Sua vida financeira em boas mãos.</p>
+            <p>Plataforma de educação financeira para quem quer entender, organizar e planejar o próprio dinheiro.</p>
+          </div>
+          <nav aria-label="Páginas do site">
+            <h2>Navegação</h2>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre o FINANCE</a></li>
+              <li><a href="aprenda.html">Aprenda</a></li>
+              <li><a href="artigos.html">Artigos</a></li>
+              <li><a href="multimidia.html">Multimídia</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+          <nav aria-label="Ferramentas">
+            <h2>Ferramentas</h2>
+            <ul>
+              <li><a href="simuladores.html">Planejamento financeiro</a></li>
+              <li><a href="movimentacoes.html">Minhas movimentações</a></li>
+              <li><a href="metas.html">Metas financeiras</a></li>
+              <li><a href="favoritos.html">Meus favoritos</a></li>
+            </ul>
+          </nav>
+          <nav aria-label="Links externos">
+            <h2>Links úteis</h2>
+            <ul>
+              <li><a href="https://www.bcb.gov.br/cidadaniafinanceira" target="_blank" rel="noopener noreferrer">Banco Central</a></li>
+              <li><a href="https://www.consumidor.gov.br" target="_blank" rel="noopener noreferrer">Consumidor.gov.br</a></li>
+              <li><a href="https://www.tesourodireto.com.br" target="_blank" rel="noopener noreferrer">Tesouro Direto</a></li>
+              <li><a href="https://github.com/victoorpinheiroo/finance" target="_blank" rel="noopener noreferrer">GitHub do projeto</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="rodape-base">
+          <p class="aviso-legal">Conteúdo de caráter educativo. O FINANCE não faz recomendação de investimentos e não tem ligação com bancos ou instituições financeiras. Os dados que você cadastra ficam salvos apenas neste navegador.</p>
+          <p>&copy; <span id="anoAtual">2026</span> FINANCE · Projeto acadêmico · Universidade Positivo<br>Desenvolvimento Front-End para Web · Prof. Fabricio Olivo<br>Victor Gabriel Santos Pinheiro e Tales Siqueira Peixoto</p>
+        </div>
+      </div>
+    </footer>
+    <div id="areaAvisos" aria-live="polite"></div>
+    <script src="js/comum.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/multimidia.js"></script>
+  </body>
+</html>
